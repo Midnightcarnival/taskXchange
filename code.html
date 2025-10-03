@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BuddyUp Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#007BFF",
+              secondary: "#FFA500",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "Noto Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+            animation: {
+              'flame-flicker': 'flame-flicker 1.5s infinite',
+            },
+            keyframes: {
+              'flame-flicker': {
+                '0%, 100%': { transform: 'scale(1, 1) rotate(0deg)', opacity: '1' },
+                '50%': { transform: 'scale(1.1, 1.1) rotate(2deg)', opacity: '0.9' },
+              }
+            }
+          },
+        },
+      };
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+<style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex flex-col gap-2 bg-primary dark:bg-primary/20 p-4 pb-2">
+<div class="flex items-center h-12 justify-between">
+<div class="flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-white text-3xl">menu</span>
+</div>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-3xl">notifications</span>
+</button>
+</div>
+</div>
+<p class="text-white dark:text-gray-100 tracking-light text-[28px] font-bold leading-tight">Hi, Rohan!</p>
+</div>
+<div class="p-4 flex-grow">
+<div class="grid grid-cols-1 gap-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-4 items-center justify-center text-center hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 cursor-pointer">
+<span class="material-symbols-outlined text-secondary text-3xl">directions_run</span>
+<h2 class="text-gray-800 dark:text-gray-200 text-base font-bold leading-tight">Be a Buddy</h2>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-4 items-center justify-center text-center hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 cursor-pointer">
+<span class="material-symbols-outlined text-secondary text-3xl">add_circle</span>
+<h2 class="text-gray-800 dark:text-gray-200 text-base font-bold leading-tight">Ask a Buddy</h2>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl p-8 items-center justify-center bg-gradient-to-br from-red-500 to-orange-500 dark:from-red-600 dark:to-orange-600 hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden min-h-[180px]">
+<div class="absolute -bottom-6 -right-6 h-32 w-32 bg-white/20 rounded-full blur-2xl"></div>
+<span class="material-symbols-outlined text-white text-6xl animate-flame-flicker" style="font-variation-settings: 'FILL' 1, 'wght' 700;">local_fire_department</span>
+<h2 class="text-white text-2xl font-extrabold tracking-wide leading-tight text-center" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3)">Wall of Shame</h2>
+</div>
+</div>
+</div>
+<div class="flex gap-2 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark px-4 pb-3 pt-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-primary" href="#">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1">home</span>
+<p class="text-primary text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined text-3xl">group</span>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-medium leading-normal tracking-[0.015em]">Buddies</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined text-3xl">chat_bubble</span>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-medium leading-normal tracking-[0.015em]">Chat</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined text-3xl">person</span>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-medium leading-normal tracking-[0.015em]">Profile</p>
+</a>
+</div>
+</div>
+</body></html>
