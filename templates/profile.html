@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>User Profile</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f5d63d",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#221f10",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .font-display {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-800 dark:text-stone-200">
+    <div class="min-h-screen flex flex-col">
+        <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+            <div class="flex items-center p-4">
+                <!-- This button now links back to the dashboard -->
+                <a href="{{ url_for('dashboard') }}" class="p-2">
+                    <svg class="text-stone-800 dark:text-stone-200" fill="currentColor" height="24"
+                        viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z">
+                        </path>
+                    </svg>
+                </a>
+                <h1 class="text-lg font-bold text-stone-900 dark:text-white flex-1 text-center pr-10">Profile</h1>
+            </div>
+        </header>
+        <main class="flex-grow">
+            <!-- User details are now dynamic -->
+            <div class="p-4 pt-6 flex flex-col items-center text-center">
+                <div class="w-32 h-32 rounded-full bg-cover bg-center mb-4"
+                    style="background-image: url('{{ user.avatar }}');"></div>
+                <h2 class="text-2xl font-bold text-stone-900 dark:text-white">{{ user.name }}</h2>
+                <p class="text-stone-600 dark:text-stone-400">{{ user.title }}</p>
+                <p class="text-sm text-stone-500 dark:text-stone-500">Joined in {{ user.join_year }}</p>
+            </div>
+            <!-- Task counts are now dynamic -->
+            <div class="grid grid-cols-2 gap-4 px-4 py-4">
+                <div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-xl text-center">
+                    <p class="text-3xl font-bold text-stone-900 dark:text-white">{{ user.tasks_completed }}</p>
+                    <p class="text-sm text-stone-600 dark:text-stone-400">Tasks Completed</p>
+                </div>
+                <div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-xl text-center">
+                    <p class="text-3xl font-bold text-stone-900 dark:text-white">{{ user.tasks_requested }}</p>
+                    <p class="text-sm text-stone-600 dark:text-stone-400">Tasks Requested</p>
+                </div>
+            </div>
+            <!-- Rating and reviews are now dynamic -->
+            <div class="px-4 py-4">
+                <h3 class="text-xl font-bold text-stone-900 dark:text-white mb-4">Rating &amp; Reviews</h3>
+                <div
+                    class="bg-background-light dark:bg-background-dark/50 p-4 rounded-xl border border-stone-200 dark:border-stone-800 flex items-center gap-6">
+                    <div class="text-center">
+                        <p class="text-5xl font-black text-stone-900 dark:text-white">{{ user.rating }}</p>
+                        <p class="text-sm text-stone-500 dark:text-stone-400 mt-1">{{ user.reviews }} reviews</p>
+                    </div>
+                    <div class="flex-grow space-y-2">
+                         <!-- Static content for now -->
+                    </div>
+                </div>
+            </div>
+            <div class="px-4 py-4 space-y-6">
+                 <!-- Static content for now -->
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
+

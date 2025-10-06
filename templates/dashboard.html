@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Campus Connect - Dashboard</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6c2bee",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#161022",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        body {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="flex flex-col min-h-screen">
+        <header class="flex items-center justify-between p-4">
+            <!-- The avatar and username are now a link to the profile page -->
+            <a href="{{ url_for('profile') }}" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-center bg-no-repeat bg-cover rounded-full"
+                    style='background-image: url("{{ user.avatar }}");'></div>
+            </a>
+            <a href="{{ url_for('logout') }}" class="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary">Logout</a>
+        </header>
+        <main class="flex flex-col items-center flex-1 px-4 text-center">
+            <div class="mt-8">
+                <span class="text-6xl">👋</span>
+                <h2 class="mt-4 text-3xl font-bold text-gray-900 dark:text-white">Welcome, {{ user.username }}!</h2>
+                <p class="mt-2 text-gray-600 dark:text-gray-300">What would you like to do today?</p>
+            </div>
+            <div class="w-full max-w-md mt-12 space-y-4">
+                <a class="flex items-center justify-center w-full gap-3 px-6 py-5 text-lg font-bold text-white rounded-lg bg-primary shadow-lg shadow-primary/30"
+                    href="#">
+                    <span class="material-symbols-outlined">forum</span>
+                    Ask Buddy
+                </a>
+                <a class="flex items-center justify-center w-full gap-3 px-6 py-5 text-lg font-bold transition-colors bg-primary/10 text-primary hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30 rounded-lg"
+                    href="#">
+                    <span class="material-symbols-outlined">support</span>
+                    Be Buddy
+                </a>
+            </div>
+            <div class="flex-grow"></div>
+            <a class="flex items-center justify-center w-full max-w-md gap-3 px-6 py-4 mt-8 mb-8 text-lg font-bold text-yellow-900 transition-colors bg-yellow-400 hover:bg-yellow-500 dark:text-yellow-900 dark:bg-yellow-400 dark:hover:bg-yellow-500 rounded-xl shadow-lg shadow-yellow-500/30"
+                href="{{ url_for('shame') }}">
+                <span class="text-2xl">😈</span>
+                Wall of Shame
+            </a>
+        </main>
+    </div>
+</body>
+
+</html>
+
