@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brain Buddy - Task Listing</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f5d63d",
+            "background-light": "#f8f8f5",
+            "background-dark": "#221f10",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="max-w-md mx-auto min-h-screen flex flex-col">
+<header class="p-4 flex items-center justify-between sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<button class="text-black dark:text-white">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold text-black dark:text-white text-center">Brain Buddy</h1>
+<div class="w-8"></div>
+</header>
+<main class="flex-grow px-4 pb-4">
+<h2 class="text-2xl font-bold text-black dark:text-white mb-6">Requests</h2>
+<div class="space-y-4">
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-xl flex items-start gap-4">
+<div class="bg-primary/20 dark:bg-primary/30 p-3 rounded-lg">
+<span class="material-symbols-outlined text-black dark:text-white">calculate</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm text-black/60 dark:text-white/60">Math</p>
+<p class="font-bold text-black dark:text-white">Calculus tutoring</p>
+</div>
+<div class="bg-primary px-3 py-1 rounded-full text-black text-sm font-bold">100 pts</div>
+</div>
+<p class="text-sm mt-2 text-black/60 dark:text-white/60">Need help with derivatives and integrals.</p>
+</div>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-xl flex items-start gap-4">
+<div class="bg-primary/20 dark:bg-primary/30 p-3 rounded-lg">
+<span class="material-symbols-outlined text-black dark:text-white">science</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm text-black/60 dark:text-white/60">Physics</p>
+<p class="font-bold text-black dark:text-white">Mechanics problem solving</p>
+</div>
+<div class="bg-primary px-3 py-1 rounded-full text-black text-sm font-bold">120 pts</div>
+</div>
+<p class="text-sm mt-2 text-black/60 dark:text-white/60">Struggling with Newton's laws and motion.</p>
+</div>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-xl flex items-start gap-4">
+<div class="bg-primary/20 dark:bg-primary/30 p-3 rounded-lg">
+<span class="material-symbols-outlined text-black dark:text-white">biotech</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm text-black/60 dark:text-white/60">Chemistry</p>
+<p class="font-bold text-black dark:text-white">Organic chemistry help</p>
+</div>
+<div class="bg-primary px-3 py-1 rounded-full text-black text-sm font-bold">150 pts</div>
+</div>
+<p class="text-sm mt-2 text-black/60 dark:text-white/60">Need assistance with reactions and mechanisms.</p>
+</div>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-xl flex items-start gap-4">
+<div class="bg-primary/20 dark:bg-primary/30 p-3 rounded-lg">
+<span class="material-symbols-outlined text-black dark:text-white">code</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm text-black/60 dark:text-white/60">Computer Science</p>
+<p class="font-bold text-black dark:text-white">Data structures &amp; algorithms</p>
+</div>
+<div class="bg-primary px-3 py-1 rounded-full text-black text-sm font-bold">130 pts</div>
+</div>
+<p class="text-sm mt-2 text-black/60 dark:text-white/60">Help with implementing linked lists and trees.</p>
+</div>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-xl flex items-start gap-4">
+<div class="bg-primary/20 dark:bg-primary/30 p-3 rounded-lg">
+<span class="material-symbols-outlined text-black dark:text-white">draw</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm text-black/60 dark:text-white/60">English</p>
+<p class="font-bold text-black dark:text-white">Essay writing</p>
+</div>
+<div class="bg-primary px-3 py-1 rounded-full text-black text-sm font-bold">80 pts</div>
+</div>
+<p class="text-sm mt-2 text-black/60 dark:text-white/60">Help structuring an argumentative essay.</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-primary/20 dark:border-primary/30">
+<nav class="flex justify-around items-center p-2">
+<a class="flex flex-col items-center gap-1 p-2 rounded-lg w-24 text-black dark:text-white" href="#">
+<span class="material-symbols-outlined !text-primary">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 rounded-lg w-24 text-black/60 dark:text-white/60" href="#">
+<span class="material-symbols-outlined !fill-0">list_alt</span>
+<span class="text-xs font-medium">My Tasks</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 rounded-lg w-24 text-black/60 dark:text-white/60" href="#">
+<span class="material-symbols-outlined !fill-0">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+<div class="pb-safe-area-inset-bottom"></div>
+</footer>
+</div>
+
+</body></html>

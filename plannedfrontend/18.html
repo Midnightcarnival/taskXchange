@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>User Profile</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f5d63d",
+            "background-light": "#f8f8f5",
+            "background-dark": "#221f10",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .font-display {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-800 dark:text-stone-200">
+<div class="min-h-screen flex flex-col">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="p-2">
+<svg class="text-stone-800 dark:text-stone-200" fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="text-lg font-bold text-stone-900 dark:text-white flex-1 text-center pr-10">Profile</h1>
+</div>
+</header>
+<main class="flex-grow">
+<div class="p-4 pt-6 flex flex-col items-center text-center">
+<div class="w-32 h-32 rounded-full bg-cover bg-center mb-4" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYQS0XSDTpmxQPo47zTohPbB8hyu2nCgC7wbxySth5rSfAxW_qhjNx7_fupxkd2Fx7c6GPRwgUlKXb1blbg9BB0ejUnLCsM1aBa_vQDqrEhw9u2YazYWUhSI7PUzbFPyXJC4t6tcZeEXYMA6MBrhQXFo1S6OkiOckL1zUN2LIWHGFqaHLnURL396HinqJ36GAWZcXgGktMiO9bJ6O_uiY-5yw-XPgmGPpReu1crd2d4DSX8sM2B0GTWkpRuE8stpHe6ZHHTw4fO6XO');"></div>
+<h2 class="text-2xl font-bold text-stone-900 dark:text-white">Sophia Carter</h2>
+<p class="text-stone-600 dark:text-stone-400">Student at State University</p>
+<p class="text-sm text-stone-500 dark:text-stone-500">Joined in 2022</p>
+</div>
+<div class="grid grid-cols-2 gap-4 px-4 py-4">
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-xl text-center">
+<p class="text-3xl font-bold text-stone-900 dark:text-white">12</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">Tasks Completed</p>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-xl text-center">
+<p class="text-3xl font-bold text-stone-900 dark:text-white">8</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">Tasks Requested</p>
+</div>
+</div>
+<div class="px-4 py-4">
+<h3 class="text-xl font-bold text-stone-900 dark:text-white mb-4">Rating &amp; Reviews</h3>
+<div class="bg-background-light dark:bg-background-dark/50 p-4 rounded-xl border border-stone-200 dark:border-stone-800 flex items-center gap-6">
+<div class="text-center">
+<p class="text-5xl font-black text-stone-900 dark:text-white">4.8</p>
+<div class="flex justify-center text-primary mt-1">
+<svg fill="currentColor" height="18" viewBox="0 0 256 256" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
+<svg fill="currentColor" height="18" viewBox="0 0 256 256" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
+<svg fill="currentColor" height="18" viewBox="0 0 256 256" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
+<svg fill="currentColor" height="18" viewBox="0 0 256 256" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
+<svg class="text-stone-300 dark:text-stone-700" fill="currentColor" height="18" viewBox="0 0 256 256" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path></svg>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400 mt-1">25 reviews</p>
+</div>
+<div class="flex-grow space-y-2">
+<div class="flex items-center gap-2">
+<p class="text-xs text-stone-600 dark:text-stone-400 w-2">5</p>
+<div class="h-2 flex-grow bg-stone-200 dark:bg-stone-800 rounded-full"><div class="h-2 bg-primary rounded-full" style="width: 70%;"></div></div>
+<p class="text-xs text-stone-500 dark:text-stone-500 w-8 text-right">70%</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-xs text-stone-600 dark:text-stone-400 w-2">4</p>
+<div class="h-2 flex-grow bg-stone-200 dark:bg-stone-800 rounded-full"><div class="h-2 bg-primary rounded-full" style="width: 20%;"></div></div>
+<p class="text-xs text-stone-500 dark:text-stone-500 w-8 text-right">20%</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-xs text-stone-600 dark:text-stone-400 w-2">3</p>
+<div class="h-2 flex-grow bg-stone-200 dark:bg-stone-800 rounded-full"><div class="h-2 bg-primary rounded-full" style="width: 5%;"></div></div>
+<p class="text-xs text-stone-500 dark:text-stone-500 w-8 text-right">5%</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-xs text-stone-600 dark:text-stone-400 w-2">2</p>
+<div class="h-2 flex-grow bg-stone-200 dark:bg-stone-800 rounded-full"><div class="h-2 bg-primary rounded-full" style="width: 3%;"></div></div>
+<p class="text-xs text-stone-500 dark:text-stone-500 w-8 text-right">3%</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-xs text-stone-600 dark:text-stone-400 w-2">1</p>
+<div class="h-2 flex-grow bg-stone-200 dark:bg-stone-800 rounded-full"><div class="h-2 bg-primary rounded-full" style="width: 2%;"></div></div>
+<p class="text-xs text-stone-500 dark:text-stone-500 w-8 text-right">2%</p>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 py-4 space-y-6">
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAY3TNyZ97qlzzU8a3IS9GqxJRqlHuUARt4GtKE93O_XB5wtfrOpC8uH6vMqSmCvXzEc4mKR_c8pW8hFRNZFzRHR4JXAADAk43yg41-Er0qQ9Nv6P76wBFrMer0cIZm31kpf6wBaALrcojv42X8cwIxz2HTterB4vF2PVRnz1Obn1_TkKpMsc1EbFr20wVwwU3edMG6yeptKVDa65Q08p8eKvuub-UOqy39K7KVvFKhg-RK8M8OOKcCoIkrNdyKMniRpfyhELTX8GEq');"></div>
+<div>
+<p class="font-medium text-stone-900 dark:text-white">Ethan Harper</p>
+<p class="text-sm text-stone-500 dark:text-stone-400">2 weeks ago</p>
+</div>
+</div>
+<div class="flex text-primary">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
+</div>
+<p class="text-stone-700 dark:text-stone-300">Sophia is incredibly reliable and always goes the extra mile. She helped me move apartments and made the process so much easier. Highly recommend!</p>
+</div>
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCAOy1ebSE79RKRqHHlBHWyMfH0MxKremAgnAlHAC-p_9A6vb82tCmhpGG8sKmQjaZx-qK1ZqoAZO7WjYbDuBEMF2W_RxR9-VcXSJJwXqTMkbw-msV9X8YCMk3dBU8dJewdfGbboCS22DbMeyIzVgP0po1mhdr-V6bsNV6vYoAjSziOy3y4g1yD1a2WPH1FCuXP0vzn4G147YHsuegeuDrUhVCl6y3WMgirt9uq7K86zhHqGaR8SoH-tgAV94Keps87M6cPcE7wJXDV');"></div>
+<div>
+<p class="font-medium text-stone-900 dark:text-white">Olivia Bennett</p>
+<p class="text-sm text-stone-500 dark:text-stone-400">1 month ago</p>
+</div>
+</div>
+<div class="flex text-primary">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
+<svg class="text-stone-300 dark:text-stone-700" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path></svg>
+</div>
+<p class="text-stone-700 dark:text-stone-300">Sophia is a great student helper. She was punctual and completed the task efficiently. Would definitely hire again.</p>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-stone-200 dark:border-stone-800 pb-safe">
+<nav class="flex justify-around items-center h-16">
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 w-1/3" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path></svg>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 w-1/3" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z"></path></svg>
+<span class="text-xs font-medium">My Tasks</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary w-1/3" href="#">
+<div class="relative">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M230.93,220a8,8,0,0,1-6.93,4H32a8,8,0,0,1-6.92-12c15.23-26.33,38.7-45.21,66.09-54.16a72,72,0,1,1,73.66,0c27.39,8.95,50.86,27.83,66.09,54.16A8,8,0,0,1,230.93,220Z"></path></svg>
+<div class="absolute -bottom-5 w-full text-center">
+<span class="text-xs font-bold text-primary">Profile</span>
+<div class="h-1 w-6 bg-primary rounded-full mx-auto mt-1"></div>
+</div>
+</div>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

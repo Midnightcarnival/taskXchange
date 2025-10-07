@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f5d63d",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#221f10",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-background-dark dark:text-background-light">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-background-dark dark:text-background-light">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold tracking-tight pr-10">Settings</h1>
+</div>
+</header>
+<main class="p-4 space-y-8">
+<section>
+<h2 class="px-4 pb-2 text-lg font-bold">Account</h2>
+<div class="space-y-2">
+<a class="flex items-center gap-4 rounded-lg bg-primary/10 dark:bg-primary/20 p-4 transition-colors hover:bg-primary/20 dark:hover:bg-primary/30" href="#">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/20 text-background-dark dark:text-background-light">
+<span class="material-symbols-outlined text-2xl">person</span>
+</div>
+<div class="flex-grow">
+<p class="font-bold">Profile</p>
+<p class="text-sm text-background-dark/60 dark:text-background-light/60">Update your profile information</p>
+</div>
+<span class="material-symbols-outlined text-background-dark/40 dark:text-background-light/40">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 rounded-lg bg-primary/10 dark:bg-primary/20 p-4 transition-colors hover:bg-primary/20 dark:hover:bg-primary/30" href="#">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/20 text-background-dark dark:text-background-light">
+<span class="material-symbols-outlined text-2xl">lock</span>
+</div>
+<div class="flex-grow">
+<p class="font-bold">Password</p>
+<p class="text-sm text-background-dark/60 dark:text-background-light/60">Change your password</p>
+</div>
+<span class="material-symbols-outlined text-background-dark/40 dark:text-background-light/40">chevron_right</span>
+</a>
+</div>
+</section>
+<section>
+<h2 class="px-4 pb-2 text-lg font-bold">Preferences</h2>
+<div class="space-y-2">
+<a class="flex items-center gap-4 rounded-lg bg-primary/10 dark:bg-primary/20 p-4 transition-colors hover:bg-primary/20 dark:hover:bg-primary/30" href="#">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/20 text-background-dark dark:text-background-light">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+</div>
+<div class="flex-grow">
+<p class="font-bold">Notifications</p>
+<p class="text-sm text-background-dark/60 dark:text-background-light/60">Manage your notification settings</p>
+</div>
+<span class="material-symbols-outlined text-background-dark/40 dark:text-background-light/40">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 rounded-lg bg-primary/10 dark:bg-primary/20 p-4 transition-colors hover:bg-primary/20 dark:hover:bg-primary/30" href="#">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/20 text-background-dark dark:text-background-light">
+<span class="material-symbols-outlined text-2xl">shield</span>
+</div>
+<div class="flex-grow">
+<p class="font-bold">Privacy</p>
+<p class="text-sm text-background-dark/60 dark:text-background-light/60">Adjust your privacy settings</p>
+</div>
+<span class="material-symbols-outlined text-background-dark/40 dark:text-background-light/40">chevron_right</span>
+</a>
+</div>
+</section>
+<section>
+<h2 class="px-4 pb-2 text-lg font-bold">Support</h2>
+<div class="space-y-2">
+<a class="flex items-center gap-4 rounded-lg bg-primary/10 dark:bg-primary/20 p-4 transition-colors hover:bg-primary/20 dark:hover:bg-primary/30" href="#">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/20 text-background-dark dark:text-background-light">
+<span class="material-symbols-outlined text-2xl">help</span>
+</div>
+<div class="flex-grow">
+<p class="font-bold">Help &amp; FAQ</p>
+<p class="text-sm text-background-dark/60 dark:text-background-light/60">Get help and find answers</p>
+</div>
+<span class="material-symbols-outlined text-background-dark/40 dark:text-background-light/40">chevron_right</span>
+</a>
+</div>
+</section>
+<div class="px-4 py-3">
+<button class="w-full h-12 rounded-full bg-primary/30 dark:bg-primary/50 text-background-dark dark:text-background-light font-bold text-base tracking-wide">
+<span>Log Out</span>
+</button>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-primary/20 dark:border-primary/30">
+<nav class="flex justify-around items-center h-20">
+<a class="flex flex-col items-center gap-1 text-background-dark/60 dark:text-background-light/60" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-background-dark/60 dark:text-background-light/60" href="#">
+<span class="material-symbols-outlined">task_alt</span>
+<p class="text-xs font-medium">My Tasks</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-background-dark dark:text-primary" href="#">
+<div class="bg-primary text-background-dark p-3 rounded-full">
+<span class="material-symbols-outlined">person</span>
+</div>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f5d63d",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#221f10",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .form-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23221f10' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        .dark .form-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23f8f8f5' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col h-screen justify-between">
+<div class="flex-grow">
+<header class="p-4">
+<div class="flex items-center justify-between">
+<button class="text-background-dark dark:text-background-light p-2 rounded-full hover:bg-primary/20">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold text-background-dark dark:text-background-light flex-1 text-center">Ask Buddy</h1>
+<div class="w-10"></div> 
+</div>
+</header>
+<main class="px-4">
+<h2 class="text-2xl font-extrabold text-background-dark dark:text-background-light mb-6">Brain Buddy</h2>
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-background-dark/70 dark:text-background-light/70 mb-2" for="subject">Subject/Skill</label>
+<select class="form-select w-full appearance-none rounded-lg border-none bg-primary/20 dark:bg-primary/30 focus:ring-2 focus:ring-primary text-background-dark dark:text-background-light placeholder-background-dark/50 dark:placeholder-background-light/50 py-3 px-4" id="subject">
+<option>e.g., Math, Python, essay writing</option>
+<option>Math</option>
+<option>Python</option>
+<option>Essay Writing</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-background-dark/70 dark:text-background-light/70 mb-2" for="topic">Specific Topic</label>
+<input class="w-full rounded-lg border-none bg-primary/20 dark:bg-primary/30 focus:ring-2 focus:ring-primary text-background-dark dark:text-background-light placeholder-background-dark/50 dark:placeholder-background-light/50 py-3 px-4" id="topic" placeholder="e.g., Algebra II, loops, thesis statements" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-background-dark/70 dark:text-background-light/70 mb-2" for="time">Preferred Time/Duration</label>
+<select class="form-select w-full appearance-none rounded-lg border-none bg-primary/20 dark:bg-primary/30 focus:ring-2 focus:ring-primary text-background-dark dark:text-background-light placeholder-background-dark/50 dark:placeholder-background-light/50 py-3 px-4" id="time">
+<option>e.g., Tomorrow at 2 PM for 1 hour</option>
+<option>Today, 5 PM - 1 hour</option>
+<option>Tomorrow, 2 PM - 2 hours</option>
+<option>This weekend - flexible</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-background-dark/70 dark:text-background-light/70 mb-2" for="reward">Reward Points</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-background-dark/50 dark:text-background-light/50">stars</span>
+<input class="w-full rounded-lg border-none bg-primary/20 dark:bg-primary/30 focus:ring-2 focus:ring-primary text-background-dark dark:text-background-light placeholder-background-dark/50 dark:placeholder-background-light/50 py-3 pl-10 pr-4" id="reward" placeholder="e.g., 50" type="number"/>
+</div>
+</div>
+</form>
+</main>
+</div>
+<div class="p-4 sticky bottom-0 bg-background-light dark:bg-background-dark">
+<button class="w-full bg-primary text-background-dark font-bold py-4 px-5 rounded-xl hover:opacity-90 transition-opacity">
+                Submit Request
+            </button>
+</div>
+</div>
+
+
+</body></html>

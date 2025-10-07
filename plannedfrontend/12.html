@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Task Details - Be Buddies</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f5d63d",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#221f10",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="p-2 -m-2 text-black dark:text-white">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-lg font-bold text-center text-black dark:text-white">Task Details</h1>
+<div class="w-8"></div> 
+</div>
+</header>
+<main class="flex-1 px-6 pt-6 pb-24 space-y-8">
+<section>
+<div class="flex items-center gap-3">
+<div class="p-3 rounded-full bg-primary/20 dark:bg-primary/30">
+<span class="text-primary material-symbols-outlined">shopping_bag</span>
+</div>
+<h2 class="text-2xl font-bold text-black dark:text-white">Grab &amp; Go</h2>
+</div>
+<p class="mt-2 text-base text-black/70 dark:text-white/70">Pick up a coffee from the campus cafe and deliver it to the library.</p>
+</section>
+<section class="p-5 space-y-4 rounded-xl bg-primary/10 dark:bg-primary/20">
+<div class="flex items-start gap-4">
+<span class="mt-1 text-primary material-symbols-outlined">place</span>
+<div>
+<p class="text-sm text-black/50 dark:text-white/50">Pickup</p>
+<p class="font-medium text-black dark:text-white">Campus Cafe</p>
+</div>
+</div>
+<div class="h-8 w-px ml-[18px] border-l border-dashed border-primary/50"></div>
+<div class="flex items-start gap-4">
+<span class="mt-1 text-primary material-symbols-outlined">flag</span>
+<div>
+<p class="text-sm text-black/50 dark:text-white/50">Dropoff</p>
+<p class="font-medium text-black dark:text-white">Library</p>
+</div>
+</div>
+</section>
+<section>
+<h3 class="text-lg font-bold text-black dark:text-white">Reward</h3>
+<div class="flex items-center gap-2 mt-2">
+<span class="text-2xl font-bold text-primary material-symbols-outlined">toll</span>
+<p class="text-2xl font-bold text-black dark:text-white">100 <span class="text-base font-medium text-black/70 dark:text-white/70">points</span></p>
+</div>
+</section>
+<section>
+<h3 class="text-lg font-bold text-black dark:text-white">Requester</h3>
+<div class="flex items-center gap-4 mt-2">
+<img alt="Requester's avatar" class="w-14 h-14 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY7PCVlyQ3foYHfiO0Ii4n56FfliewkFh-pA1efq6RiXsQBEG2F3s1_Ud25mLfgmLri4rcRAcHcIqslw-xqBjx1-vLGBg7F4_clhNWR5JSyONATbx53_HltkqjWFRp62CAnTIvaYAXSug4GavEk7AmP24sle0gMk0FDe0zEBq9qc_SwtERrNqygDJEfxyJt8cngnf31dhXCNhowmLOto20zuPMNqmU3cktQ4zNLRuRdJ6thY3XHhuMv3O_QAv6XL2UUnzONJ4HI-W2"/>
+<div>
+<p class="text-base font-bold text-black dark:text-white">Sophia</p>
+<div class="flex items-center gap-1 mt-1 text-sm text-black/70 dark:text-white/70">
+<span class="text-primary material-symbols-outlined !text-base" style="font-variation-settings: 'FILL' 1">star</span>
+<p>4.8 <span class="text-black/50 dark:text-white/50">(23 reviews)</span></p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="fixed bottom-0 left-0 right-0 p-4 bg-background-light dark:bg-background-dark border-t border-primary/20 dark:border-primary/30">
+<div class="flex justify-center gap-4">
+<button class="flex-1 py-3 text-base font-bold text-black rounded-lg bg-primary/20 dark:bg-primary/30 dark:text-white">Decline</button>
+<button class="flex-1 py-3 text-base font-bold text-black rounded-lg bg-primary">Accept Task</button>
+</div>
+</footer>
+</div>
+
+</body></html>

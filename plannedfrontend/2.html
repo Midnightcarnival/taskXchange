@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ask Buddy</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6c2bee",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#161022",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div>
+<header class="flex items-center justify-between p-4 pb-2">
+<div class="w-12"></div>
+<h1 class="flex-1 text-center text-lg font-bold text-[#161022] dark:text-[#f6f6f8]">Ask Buddy</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-transparent text-[#161022] dark:text-[#f6f6f8]">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</header>
+<main class="p-4">
+<h2 class="text-[22px] font-bold text-[#161022] dark:text-[#f6f6f8] pb-3">Categories</h2>
+<div class="space-y-4">
+<div class="group relative flex h-48 flex-col justify-end overflow-hidden rounded-lg bg-cover bg-center" style='background-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtCKcca4nyqJvK944CXGId3PCwF44aKe4RrPsACRd3kuT-l8LnTjN2csWn-hBLZ4Xsp-9TQJbiSlBmQbxY-MCcJ4kI1S5arqVoQuESb18by5MuRcHjsIXh7uiGaH_7bvsLXYtYxGSnbE3wiXXzhWwzxH_H-SbaUZHtLgMBRLrtBrVzJbgryAD8tDib_rA8IC9xQ7Be_kn1fhlZIH5xveXJEgmgFZgj-DPQj5FBrAwP_CZI0Rdl2ngjjH9PcWcKGXZf9sRFY2u8KXFW");'>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+<div class="relative z-10 flex items-end justify-between gap-4 p-4">
+<div class="flex-1">
+<h3 class="text-2xl font-bold text-white">Grab &amp; Go 🍔</h3>
+<p class="text-sm font-medium text-white/90">Need a quick bite or essentials? Buddies can pick up and deliver for you.</p>
+</div>
+<button class="flex h-10 min-w-[84px] items-center justify-center rounded-full bg-primary px-4 text-sm font-bold text-white shadow-lg transition-transform group-hover:scale-105">
+<span>Request</span>
+</button>
+</div>
+</div>
+<div class="group relative flex h-48 flex-col justify-end overflow-hidden rounded-lg bg-cover bg-center" style='background-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHGzvRffqASVUVDYjycRM7AfKqqA1qnYLxtex4yXTHDb5a1gkA5Jgf8Sv69wYxPNJbGZkPc2VPNkcslNPyllBEeNeOu-UFVmmt6eR9oisUeojWhAcFH9oPzvI1tS5bYVTDLAHHu9kAhQffMy3EpMSVVgSFGPw42g-xm176PItj_sFG_KxJWyBe55tLOwUKtUJHF8LX_ofA1H9DiiqsZCYZZd-zelgv91Bk-WtDaTo5WIuLwGoC85UOq9zYLPSWOw6r6mSf6OeaoCFI");'>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+<div class="relative z-10 flex items-end justify-between gap-4 p-4">
+<div class="flex-1">
+<h3 class="text-2xl font-bold text-white">Assignment Ace ✍️</h3>
+<p class="text-sm font-medium text-white/90">Stuck on an assignment? Find a Buddy to help you understand the concepts.</p>
+</div>
+<button class="flex h-10 min-w-[84px] items-center justify-center rounded-full bg-primary px-4 text-sm font-bold text-white shadow-lg transition-transform group-hover:scale-105">
+<span>Request</span>
+</button>
+</div>
+</div>
+<div class="group relative flex h-48 flex-col justify-end overflow-hidden rounded-lg bg-cover bg-center" style='background-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBsrhWMcRmNg95UarvMNbYsu0C0PPGpKM8M80_f7YyxIOzGFuN62Wi_aqYgq5XMmZ7vAUZfBq5BsotCKEKN4WyPTcz9qOCFwiKXX1x-Xuok0AqYc5qzbX137CCgyuJrCtDl_nD6037kd-Cb2wX_T-aRgDL5i99nVGpbpaZ3BnwBD5CIbI-KpYB71pZzdyg9ZQcGESouWBbAyb41yKgmWJdlsh6u3i_z2vNGAsV2rji_Td33a-no6V__NcQC__eZcG59Hdn8JwY35Auv");'>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+<div class="relative z-10 flex items-end justify-between gap-4 p-4">
+<div class="flex-1">
+<h3 class="text-2xl font-bold text-white">Brain Buddy 🧠</h3>
+<p class="text-sm font-medium text-white/90">Need a study partner? Connect with Buddies who can help you prepare for exams.</p>
+</div>
+<button class="flex h-10 min-w-[84px] items-center justify-center rounded-full bg-primary px-4 text-sm font-bold text-white shadow-lg transition-transform group-hover:scale-105">
+<span>Request</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0">
+<div class="relative">
+<div class="absolute bottom-16 right-4">
+<button class="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-white shadow-lg">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</div>
+</div>
+<div class="border-t border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm pt-2 pb-safe">
+<div class="flex justify-around px-4 pb-3">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-bold">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#161022]/50 dark:text-[#f6f6f8]/50" href="#">
+<span class="material-symbols-outlined">list_alt</span>
+<p class="text-xs font-medium">My Requests</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#161022]/50 dark:text-[#f6f6f8]/50" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-medium">Profile</p>
+</a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

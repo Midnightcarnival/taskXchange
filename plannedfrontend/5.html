@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f5d63d",
+            "background-light": "#f8f8f5",
+            "background-dark": "#221f10",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-background-dark dark:text-background-light">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 flex items-center justify-between bg-background-light/80 p-4 pb-2 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="flex size-10 items-center justify-center rounded-full text-background-dark dark:text-background-light">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold">Grab &amp; Go</h1>
+<div class="w-10"></div>
+</header>
+<main class="p-4 pb-24">
+<section class="mb-8">
+<h2 class="px-2 pb-4 text-2xl font-bold">Active Tasks</h2>
+<div class="relative overflow-hidden rounded-xl bg-primary/20 p-4 dark:bg-primary/30">
+<div class="absolute -right-4 -top-4 size-24 rounded-full bg-primary/30"></div>
+<div class="absolute -bottom-8 -left-2 size-32 rounded-full bg-primary/30"></div>
+<div class="relative z-10 flex items-center gap-4">
+<div class="h-24 w-24 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvdMAPM71rXrrUwUoyJAfi7DJL7xrfyB2h-9Xgp3-QmtbQvuFZci_-TkY8rwDlDDdEMJve_Phl74Zf1hdqb0sBeCZRwjS9mTlJ9EiydWuI2gl5waJY7stlcDpqOg-YWow9rPzxc0r3h0DunKxLpYogsbhgpjUe0XITSF0L9k3U3TQ3UAoDEYHhhLw_5fTECX7fkAsl3NR_q6e6T7O8l_LpRoj8ljUM85Y3qe-28lDnrt15OvLl4etcsq3lNeMVaXWxM0eEn2PGH_56");'></div>
+<div class="flex-grow">
+<div class="mb-2">
+<p class="text-sm font-medium text-background-dark/60 dark:text-background-light/60">Delivery</p>
+<p class="text-lg font-bold text-background-dark dark:text-background-light">Groceries</p>
+<div class="mt-1 flex items-center text-xs text-background-dark/60 dark:text-background-light/60">
+<span class="material-symbols-outlined !text-sm !font-normal mr-1">location_on</span>
+<span>Campus Market to Dorm B</span>
+</div>
+<div class="mt-1 flex items-center text-xs text-background-dark/60 dark:text-background-light/60">
+<span class="material-symbols-outlined !text-sm !font-normal mr-1">paid</span>
+<span>250 Points</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="relative h-2 w-full rounded-full bg-background-dark/10 dark:bg-background-light/20">
+<div class="absolute left-0 top-0 h-2 w-2/3 rounded-full bg-primary"></div>
+</div>
+<p class="mt-1 text-right text-xs font-semibold text-background-dark dark:text-background-light">In Progress...</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<h2 class="px-2 pb-4 text-2xl font-bold">Available Tasks</h2>
+<div class="space-y-4">
+<div class="flex items-center gap-4 rounded-xl bg-background-light p-4 shadow-sm dark:bg-background-dark/50">
+<div class="h-24 w-24 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJnhPdbNPRGKrECN8Cww3rnsOppDtsV_YdqO4T5zpKYUjnK-0snaIRGwAo8IWD13Pwf46_r7-xOzS4l9wwuYm_LyhaPFULptjuY6ppbACO_oGmLTJVZt5tcBc1BVjPWxJIaYELzbP0jtNEmM6ocS51cxclOydob4ru7nTFVQufE8073OsAHnNnNB3ALRPPlnreCGOcdDLF6zQuMwiJRvQx_AvTJGMvan8FMT-1ZkGOQjDugggqRhPB6OReWFLLahb_KHsndcuNjrQH");'></div>
+<div class="flex-grow">
+<div class="mb-2">
+<p class="text-sm font-medium text-background-dark/60 dark:text-background-light/60">Pickup</p>
+<p class="text-lg font-bold text-background-dark dark:text-background-light">Coffee</p>
+<div class="mt-1 flex items-center text-xs text-background-dark/60 dark:text-background-light/60">
+<span class="material-symbols-outlined !text-sm !font-normal mr-1">location_on</span>
+<span>Campus Cafe to Library</span>
+</div>
+<div class="mt-1 flex items-center text-xs text-background-dark/60 dark:text-background-light/60">
+<span class="material-symbols-outlined !text-sm !font-normal mr-1">paid</span>
+<span>150 Points</span>
+</div>
+</div>
+<button class="w-full rounded-full bg-primary px-4 py-2 text-sm font-bold text-background-dark transition-transform active:scale-95">Accept</button>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-background-light p-4 shadow-sm dark:bg-background-dark/50">
+<div class="h-24 w-24 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAe-Wywv9qXmKWslwmBt2BJ_dFkCRO3G24-GkPUglwh6SFQHlt6ZjWAS8Vjy34tP28gOHv_x6DEnyipqdP94eM7WCO-9kCwDEoacQTAzTwgC07OOdiW_M2ihgbg3ZNlPSzdIlD0SKn5Ww-BF4qmrbhYsdYWrhu3JVaGzqIYfpr8xKqm8rUpLJcguqsGMHpQNPFOVouy4rubRILhVWHiqM_oKrF5B4WqeOra5dyKNGkOqMOBH_T_a3HA-1eJ3lNMhv7tcSZqq1gz67wY");'></div>
+<div class="flex-grow">
+<div class="mb-2">
+<p class="text-sm font-medium text-background-dark/60 dark:text-background-light/60">Pickup</p>
+<p class="text-lg font-bold text-background-dark dark:text-background-light">Textbook</p>
+<div class="mt-1 flex items-center text-xs text-background-dark/60 dark:text-background-light/60">
+<span class="material-symbols-outlined !text-sm !font-normal mr-1">location_on</span>
+<span>Bookstore to Dorm A</span>
+</div>
+<div class="mt-1 flex items-center text-xs text-background-dark/60 dark:text-background-light/60">
+<span class="material-symbols-outlined !text-sm !font-normal mr-1">paid</span>
+<span>200 Points</span>
+</div>
+</div>
+<button class="w-full rounded-full bg-primary px-4 py-2 text-sm font-bold text-background-dark transition-transform active:scale-95">Accept</button>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-background-light p-4 shadow-sm dark:bg-background-dark/50">
+<div class="h-24 w-24 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4IVGgyyKxF_5vwObExJJ1GiHLj6jPK-I9jjpTxIphLX19t0I52ICd5W6K6M-_qYwtHiFBmiYc7lvoK1joowLYsv1U240l-Ab3EYZyV8InGMIusBObdpRFTbEpEEE3cfeSqf_Qdjs4b2SSmYs5O5xXvzkIrzRE2bXwMRIXg_HTAqSvB0gnqaWaPhBkEyYTUm-8Wiy09ULFcziOJtZWs1XstekF-S1qu6HOiIgaMUi4VkzZEPm5gMtO2M2b6v3_pEcLT5s8a6i_l1OK");'></div>
+<div class="flex-grow">
+<div class="mb-2">
+<p class="text-sm font-medium text-background-dark/60 dark:text-background-light/60">Pickup</p>
+<p class="text-lg font-bold text-background-dark dark:text-background-light">Lunch</p>
+<div class="mt-1 flex items-center text-xs text-background-dark/60 dark:text-background-light/60">
+<span class="material-symbols-outlined !text-sm !font-normal mr-1">location_on</span>
+<span>Food Court to Study Hall</span>
+</div>
+<div class="mt-1 flex items-center text-xs text-background-dark/60 dark:text-background-light/60">
+<span class="material-symbols-outlined !text-sm !font-normal mr-1">paid</span>
+<span>120 Points</span>
+</div>
+</div>
+<button class="w-full rounded-full bg-primary px-4 py-2 text-sm font-bold text-background-dark transition-transform active:scale-95">Accept</button>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-background-light p-4 shadow-sm dark:bg-background-dark/50">
+<div class="h-24 w-24 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAV3NQZj_zXPZudJinRAbZ4k88kUo_gr2NXfknS6XKWR1Bat11FO7whVgllUWjbPIrPLMBB899B5TvWZjAcbtsNVgd0wa5utalZT3tfl0_j9rCBSYX_6eVqG8w2sVx6ekI3B-VF3u7R__Yh5d8ISO5A2552zzMO93kapnkOWTsMQtiNlIHQnTd6ctr4V7X-pzSXCDfBAE6UZ4mbyJpa7yO0gMnDlC1t7L-rpj1Icjw27gBl8nzoZ0lGyWjJY-Uz6f8N_Ttema_TCQnS");'></div>
+<div class="flex-grow">
+<div class="mb-2">
+<p class="text-sm font-medium text-background-dark/60 dark:text-background-light/60">Pickup</p>
+<p class="text-lg font-bold text-background-dark dark:text-background-light">Stationery</p>
+<div class="mt-1 flex items-center text-xs text-background-dark/60 dark:text-background-light/60">
+<span class="material-symbols-outlined !text-sm !font-normal mr-1">location_on</span>
+<span>Campus Store to Classroom 101</span>
+</div>
+<div class="mt-1 flex items-center text-xs text-background-dark/60 dark:text-background-light/60">
+<span class="material-symbols-outlined !text-sm !font-normal mr-1">paid</span>
+<span>100 Points</span>
+</div>
+</div>
+<button class="w-full rounded-full bg-primary px-4 py-2 text-sm font-bold text-background-dark transition-transform active:scale-95">Accept</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 border-t border-background-dark/10 bg-background-light/80 pb-3 pt-2 backdrop-blur-sm dark:border-background-light/10 dark:bg-background-dark/80">
+<nav class="flex justify-around">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-background-dark/50 dark:text-background-light/50" href="#">
+<span class="material-symbols-outlined !font-light">home</span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<div class="rounded-full bg-primary/20 px-5 py-1">
+<span class="material-symbols-outlined text-primary">list_alt</span>
+</div>
+<p class="text-xs font-bold text-background-dark dark:text-background-light">My Tasks</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-background-dark/50 dark:text-background-light/50" href="#">
+<span class="material-symbols-outlined !font-light">person</span>
+<p class="text-xs font-medium">Profile</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
